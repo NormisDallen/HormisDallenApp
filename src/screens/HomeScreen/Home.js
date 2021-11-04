@@ -83,7 +83,7 @@ const Home = ({ navigation }) => {
                 fontSize: 10,
                 zIndex: 20
               }}>
-                4
+                1
               </Badge>
               {/*show badge */}
               <Ionicons name="notifications-outline" size={24} color={color} />

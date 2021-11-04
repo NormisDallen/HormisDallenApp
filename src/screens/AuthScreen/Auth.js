@@ -25,7 +25,7 @@ const Auth = () => {
 
 
       <Stack.Screen
-        name="Login"
+        name="Login Here"
         component={Login}
         options={{ headerShown: false }}
 

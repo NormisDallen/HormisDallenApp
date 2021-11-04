@@ -54,6 +54,8 @@ const Landing = () => {
             { id: "1", images: Arrayimages?.image1, event: "arial views" },
             { id: "2", images: Arrayimages?.image1, event: "general view" },
             { id: "3", images: Arrayimages?.image3, event: "school building" },
+            { id: "4", images: Arrayimages?.image3, event: "school building" },
+            { id: "5", images: Arrayimages?.image3, event: "school building" }
 
 
 

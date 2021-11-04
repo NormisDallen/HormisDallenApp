@@ -1,11 +1,12 @@
 import React from 'react'
 import { View, Text,FlatList,SafeAreaView,ScrollView,Image,StyleSheet } from 'react-native'
-import { Card } from 'react-native-paper';
+import { Card,FAB } from 'react-native-paper';
 import AppBar from '../../components/AppBar/AppBar'
 import { Arrayimages } from '../../Constants/fakeimages';
 import { theme } from '../../theme';
 
 export default function Faqs() {
+    const meet = 'https://meet.google.com/csx-wsqc-smt'
     const data = [
         {
             id:'1',
@@ -23,10 +24,14 @@ export default function Faqs() {
         {
             id:'2',
             image: Arrayimages.image1,
-            title: "Fees Structure",
+            title: "Pupils' health and security",
             info:`
-        Kindly contact us about the adjustments
-        in the fees structure.
+        The school provides a fully   equipped 
+      school clinic to provide health  services to
+      our pupils for we literally mind about your
+      child's health
+
+
              `
         },
         {
@@ -59,22 +64,18 @@ How do i apply?`,
      
     return (
         <>
-        <ScrollView>
+        <View>
 
-        {/**<View style={{borderBottomWidth:2,borderBottomColor:'green'}}>
-           <AppBar title="Frequently Asked Questions" />
-        </View> */}
- <br/>
-      
-           <SafeAreaView>
-           <FlatList
+
+            <FlatList
                     
                     keyExtractor={item=>(item.id)}
                        data={data}
-                    renderItem={({item})=><>
-                    <View style={{width:"50vh", color:'white', marginTop:10, justifyContent:'space-around',marginLeft:20}}>
+                    renderItem={({item})=>
+                    <>
+                    <View style={{width:"50%", color:'white', marginTop:10, justifyContent:'space-around',marginLeft:20}}>
 
-                        <Card style={{backgroundColor:theme.colors.primary,width:300,height:200 ,marginBottom:10,justifyContent:'space-around'}}>
+                        <Card style={{backgroundColor:theme.colors.accent,width:300,height:200 ,marginBottom:10,justifyContent:'space-around'}}>
                             <Card.Actions style={{display:'flex',flexDirection:'row',}}>
                                 <View>
                                 
@@ -87,18 +88,21 @@ How do i apply?`,
                         </Card>
                     
                     </View>
-                    
+  
+
                     </>
                 }
-                />
-           </SafeAreaView>
-           <br/>
+                /> 
+       
+         {/* {'\n'}
            <View style={styles.footer}>
-            <Text style={styles.text3}>All inquires are related to the school<br/>
-            for more inquiries reach us on our contacts page</Text>
-        </View>
+            <Text style={styles.text3}>
+                All inquires are related to the school{'\n'}
+            for more inquiries reach us on our contacts page
+            </Text>
+        </View> */}
         
-        </ScrollView>
+        </View>
 
         
         
@@ -124,14 +128,15 @@ const styles = StyleSheet.create({
     },
     text:{
     
-        color:'white'
+        color:`${theme.colors.black}`,
+        
 
     },
     text3:{
         marginLeft:30,
         marginTop:10,
         padding:10,
-        color:theme.colors.text
+        color:theme.colors.black
     },
     text2:{
         marginLeft:20,

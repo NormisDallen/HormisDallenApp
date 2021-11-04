@@ -3,8 +3,8 @@ import { View, Text, StatusBar, ScrollView, StyleSheet, Image, SafeAreaView, Pre
 import { theme } from '../theme'
 import HomeCard from '../components/Cards/HomeCard'
 import CardsTop from '../components/Cards/CardsTop'
-import { Card } from 'react-native-paper'
-
+import { Card,Divider } from 'react-native-paper'
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 export default function SchoolImages({ navigation }) {
 
@@ -50,9 +50,19 @@ export default function SchoolImages({ navigation }) {
             idn: require('../../assets/images/img75.jpg'),
         },
         {
-            id: "20",
+            id: "21",
             idn: require('../../assets/images/img7.jpg'),
-        }
+        },
+        <View style={styles.wrapper}>
+                <View style={styles.container}>
+                  <Ionicons name='help-circle' size={25} color={theme.colors.primary} />
+                  <Text style={styles.Text} onPress={() => { navigation.navigate('Fequently Asked Questions') }}>School Inquiries</Text>
+
+                </View>
+
+                <Divider />
+              </View>
+
     ]
     return (
         <>

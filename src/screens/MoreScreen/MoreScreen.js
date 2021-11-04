@@ -16,16 +16,16 @@ export default function MoreScreen({ navigation }) {
 
               <View style={styles.wrapper}>
                 <View style={styles.container}>
-                  <Ionicons name='school' size={20} color="#006a4e" />
+                  <Ionicons name='school' size={20} color={theme.colors.primary} />
                   <Text style={styles.Text} onPress={() => { navigation.navigate('About School') }}>About School</Text>
                 </View>
 
-                <Divider style={{ width: '100vh', color: "green" }} />
+                <Divider style={{ width: '100%' }} />
               </View>
 
               <View style={styles.wrapper}>
                 <View style={styles.container}>
-                  <Ionicons name='book' size={20} color="#006a4e" />
+                  <Ionicons name='book' size={20} color={theme.colors.primary} />
                   <Text style={styles.Text} onPress={() => { navigation.navigate('School Application Form') }}>Application Forms</Text>
 
                 </View>
@@ -35,7 +35,7 @@ export default function MoreScreen({ navigation }) {
 
               <View style={styles.wrapper}>
                 <View style={styles.container}>
-                  <Ionicons name='call' size={25} color="#006a4e" />
+                  <Ionicons name='call' size={25} color={theme.colors.primary} />
                   <Text style={styles.Text} onPress={() => { navigation.navigate('Contact Us') }}>Contact Us</Text>
 
                 </View>
@@ -45,7 +45,7 @@ export default function MoreScreen({ navigation }) {
 
               <View style={styles.wrapper}>
                 <View style={styles.container}>
-                  <Ionicons name='help-circle' size={25} color="#006a4e" />
+                  <Ionicons name='help-circle' size={25} color={theme.colors.primary} />
                   <Text style={styles.Text} onPress={() => { navigation.navigate('Fequently Asked Questions') }}>School Inquiries</Text>
 
                 </View>
@@ -54,11 +54,20 @@ export default function MoreScreen({ navigation }) {
               </View>
 
 
+              <View style={styles.wrapper}>
+                <View style={styles.container}>
+                  <Ionicons name='image' size={25} color={theme.colors.primary} />
+                  <Text style={styles.Text} onPress={() => { navigation.navigate('Gallery') }}>Gallery</Text>
+
+                </View>
+
+                <Divider />
+              </View>
 
               <View style={styles.wrapper}>
 
                 <View style={styles.container}>
-                  <Ionicons name='car' size={25} color="#006a4e" />
+                  <Ionicons name='car' size={25} color={theme.colors.primary} />
                   <Text style={styles.Text} onPress={() => { navigation.navigate('School Transport') }}>Transport</Text>
                 </View>
                 <Divider />
@@ -66,7 +75,7 @@ export default function MoreScreen({ navigation }) {
               <View style={styles.wrapper}>
 
                 <View style={styles.container}>
-                  <Ionicons name='person-circle' size={25} color="#006a4e" />
+                  <Ionicons name='person-circle' size={25} color={theme.colors.primary} />
                   <Text style={styles.Text} onPress={() => { navigation.navigate('Your Profile') }}>Your Profile</Text>
                 </View>
                 <Divider />
@@ -74,7 +83,7 @@ export default function MoreScreen({ navigation }) {
 
               <View style={styles.wrapper}>
                 <View style={styles.container}>
-                  <Ionicons name='key' size={25} color="#006a4e" />
+                  <Ionicons name='key' size={25} color={theme.colors.primary} />
                   <Text style={styles.Text} onPress={() => { navigation.navigate('School Transport') }}>Log Out</Text>
 
                 </View>
@@ -104,7 +113,8 @@ const styles = StyleSheet.create({
   },
   Text: {
     fontSize: 15,
-    marginLeft: 20
+    marginLeft: 20,
+    color: `${theme.colors.black}`
 
   },
   wrapper: {
@@ -120,8 +130,8 @@ const styles = StyleSheet.create({
     borderBottomWidth: 5
   },
   card: {
-    width: '100vh',
-    height: '70vh',
+    width: '100%',
+    height: '100%',
     marginTop: 0,
 
   }

@@ -1,16 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View, Text, ScrollView ,StatusBar, StyleSheet, KeyboardAvoidingView} from 'react-native'
 import AppBar from '../../components/AppBar/AppBar'
 import { Card, HelperText, Subheading, TextInput } from 'react-native-paper';
 import { theme } from '../../theme';
 import ButtonComponent from '../../components/Button/Button';
+import DropDown from 'react-native-paper-dropdown';
 
 export default function Application() {
+  const [nightMode, setNightmode] = useState(false);
+  const [showDropDown, setShowDropDown] = useState(false);
+  const [gender, setGender] = useState < string > "";
+  const [showMultiSelectDropDown, setShowMultiSelectDropDown] = useState(false);
+  const [colors, setColors] = useState < string > "";
+  const genderList = [
+    {
+      label: "Male",
+      value: "male",
+    },
+    {
+      label: "Female",
+      value: "female",
+    },
+    {
+      label: "Others",
+      value: "others",
+    },
+  ];
     return (
         <ScrollView style={{marginBottom:30}}> 
-            <StatusBar  backgroundColor='green'/>
+            <StatusBar  backgroundColor={theme.colors.primary}/>
+
+            <View>
+            <Text>Apply here</Text>
+            </View>
+         
             
             <View>
+           
                 <Card style={styles.container}>
                     <Card.Actions style={styles.inputStyles}> 
                         <KeyboardAvoidingView>
@@ -21,7 +47,7 @@ export default function Application() {
               style={{
                 backgroundColor: theme.colors.text,
                 color: 'red',
-                width: '96%',
+                width: '100%',
                 alignSelf: 'center',
                 borderBottomWidth: 0,
                 height: 55,
@@ -300,13 +326,13 @@ export default function Application() {
                     </Card.Actions>
                     <View style={{ display: 'flex', alignItems: 'center', marginTop: 30, marginBottom: 30 }}>
 
-<ButtonComponent style={{ backgroundColor: "green", width: 200 }} color={`${theme.colors.text}`} mode="outlined" text="Save" />
+<ButtonComponent style={{ backgroundColor:`${theme.colors.primary}`, width: 200 }} color={`${theme.colors.text}`} mode="outlined" text="Save" />
 </View>
 
 
 <View style={{ display: 'flex', alignItems: 'center', marginTop: 30, marginBottom: 30 }}>
 
-<ButtonComponent style={{ backgroundColor: "green", width: 200 }} color={`${theme.colors.text}`} mode="outlined" text="Send" />
+<ButtonComponent style={{  backgroundColor:`${theme.colors.primary}`, width: 200 }} color={`${theme.colors.text}`} mode="outlined" text="Send" />
 </View>
 
                 </Card>
@@ -323,7 +349,7 @@ const styles = StyleSheet.create({
         marginLeft:20,
         marginTop:20,
         elevation:10,
-        width:'50vh'
+        width:'90%'
     },
     sectionStyles: {
         flex: 1,

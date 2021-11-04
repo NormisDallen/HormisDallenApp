@@ -15,7 +15,7 @@ export default function ProfileDetails({ navigation }) {
 
     return (
         <>
-            <ScrollView showsVerticalScrollIndicator={false} style={{ backgroundColor: `${theme.colors.secondary}`, height: "50%" }}>
+            <ScrollView showsVerticalScrollIndicator={false} style={{ backgroundColor: `${theme.colors.secondary}` }}>
 
                 <StatusBar backgroundColor={theme.colors.primary} />
                 {/**profile avator */}
@@ -25,7 +25,7 @@ export default function ProfileDetails({ navigation }) {
                     shadowOpacity: .1,
                     shadowRadius: 10,
                 }}>
-                    <Avatar.Image style={{ marginLeft: 120, marginTop: 30, marginBottom: 60 }} size={150}
+                    <Avatar.Image style={{ marginLeft: 100, marginTop: 20, marginBottom: 60 }} size={150}
                         source={{ uri: "https://t4.ftcdn.net/jpg/02/77/68/55/360_F_277685543_bZy10zzHIR8wjLRd5NUCgYMZQadEDGWe.webp" }}
                         color='white'
 
@@ -65,7 +65,7 @@ export default function ProfileDetails({ navigation }) {
                                                 <TouchableOpacity style={{ marginRight: 5 }} activeOpacity={0.4} >
                                                     <MaterialIcon name="account" size={33} color={theme.colors.primary} />
                                                 </TouchableOpacity>
-                                                <Text style={{ marginLeft: 10, fontSize: 20 }}>kikonyogosadic</Text>
+                                                <Text style={{ marginLeft: 10, fontSize: 15,color:'black' }}>kikonyogosadic</Text>
 
                                             </View>
 
@@ -74,7 +74,7 @@ export default function ProfileDetails({ navigation }) {
                                                 <TouchableOpacity activeOpacity={0.4} style={{ marginLeft: 10 }} >
                                                     <MaterialIcon size={26} color={theme.colors.primary} name="email" />
                                                 </TouchableOpacity>
-                                                <Text style={{ marginLeft: 10, fontSize: 20, marginBottom: 5 }}>kikonyogosadic@gmail.com</Text>
+                                                <Text style={{ marginLeft: 10, fontSize: 15, marginBottom: 5,color:'black' }}>kikonyogosadic@gmail.com</Text>
 
                                             </View>
 
@@ -82,14 +82,14 @@ export default function ProfileDetails({ navigation }) {
 
                                             <View style={{ marginLeft: 10, display: 'flex', flexDirection: "row" }}>
                                                 <MaterialIcon size={26} color={theme.colors.primary} name="phone" />
-                                                <Text style={{ marginLeft: 10, fontSize: 20, marginBottom: 4 }}>0753299742</Text>
+                                                <Text style={{ marginLeft: 10, fontSize: 15, marginBottom: 4,color:'black' }}>0753299742</Text>
 
 
                                             </View>
 
                                             <View style={{ marginLeft: 10, display: 'flex', flexDirection: "row" }}>
                                                 <MaterialIcon size={26} color={theme.colors.primary} name="home" />
-                                                <Text style={{ marginLeft: 10, fontSize: 20, marginTop: 4 }}>Gayaza</Text>
+                                                <Text style={{ marginLeft: 10, fontSize: 15, marginTop: 4,color:'black' }}>Gayaza</Text>
 
 
                                             </View>
@@ -104,7 +104,7 @@ export default function ProfileDetails({ navigation }) {
                     </View>
                 </View>
 
-                <View style={{ marginBottom: 0, marginLeft: 40 }}>
+                <View style={{ marginBottom: 0, marginLeft: 40,marginTop:50 }}>
                     <Card style={{
                         width: '80%', height: '50%', marginTop: 40, backgroundColor: `${theme.colors.background}`, marginBottom: 30, borderColor: `${theme.colors.accent}`, borderWidth: 8, elevation: 5, shadowColor: '#000',
                         shadowOffset: { width: 0, height: 2 },
@@ -117,30 +117,31 @@ export default function ProfileDetails({ navigation }) {
                                 <ButtonComponent style={{ width: 200, backgroundColor: `${theme.colors.primary}` }} color={`${theme.colors.secondary}`} mode="outlined" text="Update Passward" />
                             </View>
 
-                            <View style={{ display: 'flex', alignItems: 'center', marginTop: 30, marginBottom: 30 }}>
+                            <View style={{ display: 'flex', alignItems: 'center', marginTop:35, marginBottom: 30 }}>
 
                                 <ButtonComponent onPress={() => navigation.navigate('Edit Profile')} style={{ width: 200, backgroundColor: `${theme.colors.primary}`, }} color={`${theme.colors.text}`} mode="outlined" text="Edit Profile" />
                             </View>
 
-                            <View style={{ display: 'flex', alignItems: 'center', marginTop: 10, marginBottom: 30 }}>
+                            <View style={{ display: 'flex', alignItems: 'center', marginTop: 10, marginBottom: 20 }}>
 
                                 <ButtonComponent onPress={() => navigation.goBack()} style={{ width: 200, backgroundColor: `${theme.colors.primary}` }} color={`${theme.colors.text}`} mode="outlined" text="Back " />
                             </View>
 
                         </Card.Actions>
                     </Card>
+                    
                 </View>
-
+                <Circle />
 
                 <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
 
                     <Circle />
-                    <View style={{ marginRight: -0 }}>
+                    {/* <View style={{ marginRight: -0 }}>
                         <Image source={{ uri: 'https://cdn3.vectorstock.com/i/thumb-large/21/07/young-smiling-female-character-is-holding-id-card-vector-38122107.jpg' }} style={{ width: 200, height: 250, }} />
-                    </View>
+                    </View> */}
                 </View>
 
-                <Divider />
+           
             </ScrollView>
 
 

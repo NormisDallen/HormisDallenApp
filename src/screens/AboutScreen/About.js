@@ -113,7 +113,7 @@ export default function About({ navigation }) {
                         Vision
                         </Text>
 
-                    <View style={styles.inner2}>
+                    <View style={styles.info3}>
                     <Text style={styles.info2}>
                     Education Has No Money Value
                     </Text>
@@ -143,7 +143,7 @@ export default function About({ navigation }) {
                     {/* card info */}
                     {
                         data.map((item, index)=>(<View key ={index}
-                         style={{  color: 'white', marginVertical: 10,  marginRight: 20 , marginLeft:10}}>
+                         style={{  color: 'white', marginVertical: 10,  marginRight: 1 , marginLeft:1}}>
 
                         <Card
                             style={{
@@ -205,8 +205,9 @@ const styles = StyleSheet.create({
     },
     info: {
         color: 'black',
-        textAlign: 'left',
-        fontSize:17
+        textAlign:'center',
+        fontSize:15,
+        width: '100%'
     
     },
     info2: {
@@ -218,17 +219,30 @@ const styles = StyleSheet.create({
         textAlign:'center'
 
     },
+    info3: {
+        marginTop: 20,
+        width: '100%',
+        borderColor: `${theme.colors.text}`,
+        borderWidth: 1,
+        backgroundColor: 'white',
+        borderRadius: 10,
+        height: 50,
+        elevation: 3,
+        alignContent:'center',
+        marginBottom:10
+
+    },
     inner2: {
         marginTop: 20,
         width: '100%',
-        marginRight:2,
-        marginBottom: 0,
         borderColor: `${theme.colors.text}`,
         borderWidth: 1,
         backgroundColor: 'white',
         borderRadius: 10,
         height: 70,
-        elevation: 3
+        elevation: 3,
+        alignContent:'center',
+        marginBottom:10
     },
     text3: {
         marginLeft: 2,
@@ -262,6 +276,7 @@ const styles = StyleSheet.create({
     text: {
         marginLeft: 18,
         marginTop: 5,
+        color: `${theme.colors.black}`
 
 
     },
@@ -274,7 +289,8 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         marginTop: 20,
         color: 'black',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        fontSize:18
 
     }
 })

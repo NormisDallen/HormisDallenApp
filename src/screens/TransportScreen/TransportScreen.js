@@ -33,10 +33,10 @@ export default function TransportScreen() {
             <ScrollView style={{ marginTop: -180 }}>
                 <View style={{ marginTop: -10, display: 'flex', backgroundColor: 'whitesmoke', flexDirection: 'row' }}>
                     <View style={{ marginLeft: 10 }}>
-                        <Image source={require('../../../assets/images/bus.jpg')} style={{ width: 150, height: 120, borderRadius: 20, alignItems: 'flex-end', marginTop: 50 }} />
+                        <Image source={require('../../../assets/images/van.jpg')} style={{ width: 150, height: 120, borderRadius: 20, alignItems: 'flex-end', marginTop: 50 }} />
                     </View>
                     <View style={{ marginLeft: 5 }} >
-                        <Image source={require('../../../assets/images/bus.jpg')} style={{ width: 150, height: 120, borderRadius: 20, alignItems: 'flex-end', marginTop: 50, marginLeft: 40 }} />
+                        <Image source={require('../../../assets/images/van.jpg')} style={{ width: 150, height: 120, borderRadius: 20, alignItems: 'flex-end', marginTop: 50, marginLeft: 40 }} />
                     </View>
                 </View>
 

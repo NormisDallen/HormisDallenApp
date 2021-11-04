@@ -13,7 +13,7 @@ const Sports = ({route}) => {
     const [places] = useState([
         {
             id: 1,
-            image:images.img69 ,
+            image:require('../../../assets/images/img70.jpg') ,
             visited: "21/05/2021",
             name: "Main Pool",
             description: "The main pool is for the primary sector ",
@@ -24,7 +24,7 @@ const Sports = ({route}) => {
         },
         {
             id: 2,
-            image: images.img75,
+            image: require('../../../assets/images/img75.jpg'),
             visited: "21/05/2021",
             name: "Junior Pool",
             description: "This pool is for the nursery sector only ",
@@ -80,7 +80,7 @@ const Sports = ({route}) => {
                                 <View style={[constantstyles.absoluteStyles, { bottom: 10, left: 140 }]}>
                                     <EntypoIcons name="dots-three-horizontal" size={24} color={theme.colors.text} />
                                 </View>
-                                <Card.Cover source={{ uri: item.image }} style={{ borderRadius: 10 }} />
+                                <Card.Cover source={item.image} style={{ borderRadius: 10 }} />
 
                             </View>
 

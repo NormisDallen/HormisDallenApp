@@ -20,12 +20,15 @@ const Notification = () => {
 
                         22/08/2021
 
+
                     </Text>
+                   
                 </View>
+                
                 {/*time */}
-                <View>
+                {/* <View>
                     <Text>There are no notifications yet </Text>
-                </View>
+                </View> */}
                
             </Pressable>
         </SafeAreaView>

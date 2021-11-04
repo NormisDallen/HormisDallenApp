@@ -8,9 +8,9 @@ export default function Circle() {
              height: 100, 
              backgroundColor: `${theme.colors.primary}`,
               borderRadius: 150 / 2,
-               marginLeft: -40, marginTop: 69,
-               marginBottom:10,
-            elevation: 2,
+               marginLeft: -40, marginTop: 0,
+               marginBottom:1,
+            elevation: 5,
         }}/>
 
     )

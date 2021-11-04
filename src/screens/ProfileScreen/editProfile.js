@@ -35,7 +35,7 @@ export default function EditProfile({ navigation }) {
 
 
                 <Card style={{
-                    backgroundColor: 'whitesmoke', width: '90%', height: '60%', marginLeft: 20, marginTop: 100, width: '80%',
+                    backgroundColor: 'whitesmoke', width: '90%', height: '50%', marginLeft: 20, marginTop: 100, width: '80%',
                     backgroundColor: `${theme.colors.accent}`,
                     marginLeft: 30,
                     borderColor: `${theme.colors.accent}`,
@@ -165,18 +165,18 @@ export default function EditProfile({ navigation }) {
                 <View>
                     <View style={{ display: 'flex', alignItems: 'center', marginTop: 30, marginBottom: 20 }}>
 
-                        <ButtonComponent mode="outlined" text="Save" color={`${theme.colors.text}`} style={{
+                        <ButtonComponent   text="SAVE" color={`${theme.colors.text}`} style={{
                             marginTop: 5,
 
                             width: '70%',
-
+                              height:'30%',
                             marginLeft: 4,
-                            marginBottom: 10,
+                            marginBottom: 30,
                             backgroundColor: `${theme.colors.primary}`,
                             marginTop: 20,
                         }}
                             contentStyle={{
-                                fontSize: 19, height: 28
+                                fontSize: 19, height: 29
                             }}
                         />
                     </View>
