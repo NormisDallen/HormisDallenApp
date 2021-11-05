@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text,} from 'react-native'
 import { PayWithFlutterwave } from 'flutterwave-react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { theme } from '../../theme';
 
 
 export default function Payments() {
@@ -14,8 +15,8 @@ export default function Payments() {
             <SafeAreaView>
 
                 <View>
-                    <Text style={{ marginTop: 40, padding: 30, fontSize: 20 }}>
-                        Flutterwave
+                    <Text style={{ marginTop: 40, padding: 30, fontSize: 20,color:`${theme.colors.black}` }}>
+                        Press on the button to make payments
                     </Text>
                     <View style={{ padding: 10, marginTop: 40 }}>
                         <SafeAreaView>
@@ -29,8 +30,8 @@ export default function Payments() {
                                     customer: {
                                         email: 'nabatanzigorret143@gmail.com'
                                     },
-                                    amount: 100,
-                                   
+                                    amount: 1000,
+                                    currency:'USD',
                                     payment_options: 'card'
                                 }}
                             />

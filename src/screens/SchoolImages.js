@@ -11,11 +11,11 @@ export default function SchoolImages({ navigation }) {
     const Images = [
         {
             id: "1",
-            idn: require('../../assets/images/img6.jpg'),
+            idn: require('../../assets/images/bus3.jpg'),
         },
         {
             id: "2",
-            idn: require('../../assets/images/img6.jpg'),
+            idn: require('../../assets/images/arial2.jpg'),
         },
         {
             id: "3",
@@ -23,7 +23,7 @@ export default function SchoolImages({ navigation }) {
         },
         {
             id: "4",
-            idn: require('../../assets/images/img6.jpg'),
+            idn: require('../../assets/images/guides.jpg'),
         },
         {
             id: "99",
@@ -31,11 +31,11 @@ export default function SchoolImages({ navigation }) {
         },
         {
             id: "15",
-            idn: require('../../assets/images/img6.jpg'),
+            idn: require('../../assets/images/dom.jpg'),
         },
         {
             id: "100",
-            idn: require('../../assets/images/img6.jpg'),
+            idn: require('../../assets/images/girl.jpg'),
         },
         {
             id: "35",
@@ -51,7 +51,7 @@ export default function SchoolImages({ navigation }) {
         },
         {
             id: "21",
-            idn: require('../../assets/images/img7.jpg'),
+            idn: require('../../assets/images/dom.jpg'),
         },
         <View style={styles.wrapper}>
                 <View style={styles.container}>

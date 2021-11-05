@@ -30,12 +30,12 @@ const { height, width } = Dimensions.get("screen")
 
 const data = [
     {
-        image: require('../../assets/images/img10.jpg'),
-        words: "School pool "
+        image: require('../../assets/images/guides.jpg'),
+        words: "Scouts and guides "
     },
     {
-        image: require('../../assets/images/img10.jpg'),
-        words: "kids toons"
+        image: require('../../assets/images/girl.jpg'),
+        words: "kids "
     },
     {
         image: require('../../assets/images/img6.jpg'),
@@ -51,11 +51,10 @@ const Landing = () => {
    
     const [home, setHome] = useState(
         [
-            { id: "1", images: Arrayimages?.image1, event: "arial views" },
-            { id: "2", images: Arrayimages?.image1, event: "general view" },
-            { id: "3", images: Arrayimages?.image3, event: "school building" },
-            { id: "4", images: Arrayimages?.image3, event: "school building" },
-            { id: "5", images: Arrayimages?.image3, event: "school building" }
+            { id: "1", images: Arrayimages?.image1, event: "School buildings" },
+            { id: "2", images: Arrayimages?.image2, event: "swimming pools" },
+            { id: "3", images: Arrayimages?.image3, event: "arial views" },
+            { id: "4", images: Arrayimages?.image4, event: "Girls' dormitories" }
 
 
 

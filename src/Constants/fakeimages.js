@@ -3,10 +3,11 @@ export const Arrayimages = {
 
   image1: [
     {
-      imagepath: require('../../assets/images/img6.jpg'),
+      imagepath: require('../../assets/images/sch.jpg'),
     },
     {
-      imagepath: require('../../assets/images/img6.jpg'),
+      imagepath: require('../../assets/images/sch1.jpg'),
+      
     },
     {
       imagepath: require('../../assets/images/img6.jpg'),
@@ -14,24 +15,23 @@ export const Arrayimages = {
   ],
   image2: [
     {
-      imagepath: require('../../assets/images/img6.jpg'),
+      imagepath: require('../../assets/images/img70.jpg'),
     },
     {
-      imagepath: require('../../assets/images/img6.jpg'),
+      imagepath: require('../../assets/images/img69.jpg'),
     },
-    {
-      imagepath: require('../../assets/images/img6.jpg'),
-    }
+   
   ],
   image3: [
     {
-      imagepath: require('../../assets/images/img10.jpg'),
+      imagepath: require('../../assets/images/arial.jpg'),
+      imagepath: require('../../assets/images/arial2.jpg'),
     }
   ],
 
   image4: [
     {
-      imagepath: require('../../assets/images/img5.jpg'),
+      imagepath: require('../../assets/images/dom.jpg'),
     }
   ],
 }

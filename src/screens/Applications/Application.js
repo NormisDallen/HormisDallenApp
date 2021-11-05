@@ -4,43 +4,29 @@ import AppBar from '../../components/AppBar/AppBar'
 import { Card, HelperText, Subheading, TextInput } from 'react-native-paper';
 import { theme } from '../../theme';
 import ButtonComponent from '../../components/Button/Button';
-import DropDown from 'react-native-paper-dropdown';
+import {Picker} from '@react-native-picker/picker';
 
 export default function Application() {
-  const [nightMode, setNightmode] = useState(false);
-  const [showDropDown, setShowDropDown] = useState(false);
-  const [gender, setGender] = useState < string > "";
-  const [showMultiSelectDropDown, setShowMultiSelectDropDown] = useState(false);
-  const [colors, setColors] = useState < string > "";
-  const genderList = [
-    {
-      label: "Male",
-      value: "male",
-    },
-    {
-      label: "Female",
-      value: "female",
-    },
-    {
-      label: "Others",
-      value: "others",
-    },
-  ];
+  const [selectedValue, setSelectedValue] = useState("female");
+  const [primary, setPrimary] = useState("one");
+  const [status, setStatus] = useState("Day");
     return (
         <ScrollView style={{marginBottom:30}}> 
             <StatusBar  backgroundColor={theme.colors.primary}/>
 
-            <View>
-            <Text>Apply here</Text>
-            </View>
-         
+           
             
             <View>
+            <View style={styles.container}>
+      
+    </View>
            
                 <Card style={styles.container}>
                     <Card.Actions style={styles.inputStyles}> 
+
                         <KeyboardAvoidingView>
-                            <View>
+
+                             <View>
                             <TextInput
             
     
@@ -77,7 +63,7 @@ export default function Application() {
             />
                             </View>
 
-                            <View>
+                            {/* <View>
                             <TextInput
              
     
@@ -111,7 +97,7 @@ export default function Application() {
               selectionColor={theme.colors.primary}
 
             />
-                            </View>
+                            </View>  */}
                             <View>
                             <TextInput
             
@@ -149,7 +135,7 @@ export default function Application() {
                             </View>
                             <View>
                             <TextInput
-              label="Password"
+              label="Guardian's contact"
     
               style={{
                 backgroundColor: theme.colors.text,
@@ -252,7 +238,23 @@ export default function Application() {
 
             />
                             </View>
-                            <View>
+
+                            
+                        <Picker
+        selectedValue={primary}
+        style={{color:'black' ,height: 50, width: 150,borderColor:`${theme.colors.primary}`,backgroundColor:`${theme.colors.primary}`,marginTop:20,marginBottom:10 }}
+        onValueChange={(itemValue, itemIndex) => setPrimary(itemValue)}
+      >
+        
+        <Picker.Item label="P.1" value="one" />
+        <Picker.Item label="P.2" value="two" />
+        <Picker.Item label="P.3" value="three" />
+        <Picker.Item label="P.4" value="four" />
+        <Picker.Item label="P.5" value="five" />
+        <Picker.Item label="P.6" value="six" />
+        <Picker.Item label="P.7" value="seven" />
+      </Picker>
+                            {/* <View>
                             <TextInput
           
     
@@ -321,18 +323,35 @@ export default function Application() {
               selectionColor={theme.colors.primary}
 
             />
-                            </View>
+                            </View> */}
+                            <Picker
+        selectedValue={selectedValue}
+        style={{ color:'black' ,height: 50, width: 150,borderColor:`${theme.colors.primary}`,backgroundColor:`${theme.colors.primary}`,marginTop:20,marginBottom:10 }}
+        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+      >
+        <Picker.Item label="Female" value="girl" />
+        <Picker.Item label="Male" value="boy" />
+      </Picker>
+
+      <Picker
+        selectedValue={selectedValue}
+        style={{ color:'black' ,height: 50, width: 150,borderColor:`${theme.colors.primary}`,backgroundColor:`${theme.colors.primary}`,marginTop:20,marginBottom:10 }}
+        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+      >
+        <Picker.Item label="Day" value="day" />
+        <Picker.Item label="Boarding" value="board" />
+      </Picker>
                         </KeyboardAvoidingView>
                     </Card.Actions>
                     <View style={{ display: 'flex', alignItems: 'center', marginTop: 30, marginBottom: 30 }}>
 
-<ButtonComponent style={{ backgroundColor:`${theme.colors.primary}`, width: 200 }} color={`${theme.colors.text}`} mode="outlined" text="Save" />
+<ButtonComponent style={{ backgroundColor:`${theme.colors.primary}`, width: 240 }} color={`${theme.colors.text}`} mode="outlined" text="Save" />
 </View>
 
 
 <View style={{ display: 'flex', alignItems: 'center', marginTop: 30, marginBottom: 30 }}>
 
-<ButtonComponent style={{  backgroundColor:`${theme.colors.primary}`, width: 200 }} color={`${theme.colors.text}`} mode="outlined" text="Send" />
+<ButtonComponent style={{  backgroundColor:`${theme.colors.primary}`, width: 240 }} color={`${theme.colors.text}`} mode="outlined" text="Send" />
 </View>
 
                 </Card>

@@ -3,10 +3,15 @@ package com.hormisdallen;
 import com.facebook.react.ReactActivity;
 import android.os.Bundle;
 
+// react-native-splash-screen >= 0.3.1
+import org.devio.rn.splashscreen.SplashScreen; // here
+
 public class MainActivity extends ReactActivity {
   @Override
 protected void onCreate(Bundle savedInstanceState) {
-  super.onCreate(null);
+  SplashScreen.show(this);  // here
+        super.onCreate(savedInstanceState);
+
 }
 
   /**

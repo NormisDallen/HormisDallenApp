@@ -83,13 +83,20 @@ export default function MoreScreen({ navigation }) {
 
               <View style={styles.wrapper}>
                 <View style={styles.container}>
-                  <Ionicons name='key' size={25} color={theme.colors.primary} />
-                  <Text style={styles.Text} onPress={() => { navigation.navigate('School Transport') }}>Log Out</Text>
+                  <Ionicons name='cash' size={25} color={theme.colors.primary} />
+                  <Text style={styles.Text} onPress={() => { navigation.navigate('Make Payments') }}>Payments</Text>
 
                 </View>
 
               </View>
+              <View style={styles.wrapper}>
+                <View style={styles.container}>
+                  <Ionicons name='key' size={25} color={theme.colors.primary} />
+                  <Text style={styles.Text} >Log Out</Text>
 
+                </View>
+
+              </View>
 
 
             </View>

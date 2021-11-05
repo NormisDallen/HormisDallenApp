@@ -24,7 +24,7 @@ const HomeCard = ({ images, event }) => {
     //seticon color
     const [iconHeartColor, setIconHeartColor] = useState("black")
     //caption
-    const [caption, setCaption] = useState(' caption this this is a caption we love caption we beat it any way with this caption we beat any way with this caption caption this my main we are moving')
+    const [caption, setCaption] = useState(' Add  a comment or  a caption here ! ....................')
 
     return (
         <Card>

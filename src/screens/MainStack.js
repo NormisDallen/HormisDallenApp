@@ -12,6 +12,7 @@ import { theme } from '../theme';
 import ResetPasword from './AuthScreen/UpdatePassword';
 import ProfileDetails from './ProfileScreen/ProfileDetails';
 import SchoolImages from './SchoolImages';
+import Payments from './Payments/Payments';
 
 
 
@@ -44,6 +45,8 @@ export default function MainStack() {
         />
 
         <Stacks.Screen name="School Application Form" component={Application} 
+        />
+          <Stacks.Screen name="Make Payments" component={Payments} 
         />
 
        <Stacks.Screen name="School Transport" component={TransportScreen} 
