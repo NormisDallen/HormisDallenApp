@@ -5,10 +5,7 @@ export const Arrayimages = {
     {
       imagepath: require('../../assets/images/sch.jpg'),
     },
-    {
-      imagepath: require('../../assets/images/sch1.jpg'),
-      
-    },
+    
     {
       imagepath: require('../../assets/images/img6.jpg'),
     },

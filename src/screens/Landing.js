@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { StyleSheet, Text, View,  Dimensions, SafeAreaView,  TouchableOpacity, FlatList } from 'react-native'
+import { StyleSheet, Text, View, Dimensions, SafeAreaView, TouchableOpacity, FlatList } from 'react-native'
 import { theme } from "../theme";
 import { Avatar } from 'react-native-paper';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import HomeCard from '../components/Cards/HomeCard';
-import HomeSCrollView from '../components/ScrollView/HomeSCrollView';
+import HomeSCrollView from '../components/ScrollView/HomeScrollView';
 import { Arrayimages } from '../Constants/fakeimages';
 import AppBar from '../components/AppBar/AppBar';
 
@@ -48,7 +48,7 @@ const data = [
 
 ]
 const Landing = () => {
-   
+
     const [home, setHome] = useState(
         [
             { id: "1", images: Arrayimages?.image1, event: "School buildings" },
