@@ -105,17 +105,3 @@ const styles = StyleSheet.create({
     },
 })
 
-{/*
-    
-We provide transport to our pupils' 
-in the day sector at a fee of 100,000 
-which is included on the fees per term.
-All day scholars are picked by our vans 
-in the morning at 7:30AM and returned in
-the evening at 5:00pm depending on the 
-scholars' area of residence using our
-school vans and buses.
-The school has a school truck that is used
-to transport school materials
-        
-*/}

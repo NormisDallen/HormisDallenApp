@@ -122,22 +122,3 @@ const Home = ({ navigation }) => {
 
 export default Home
 
-{/**<Tab.Screen
-        name="Profile"
-        component={ProfileDetails}
-        options={{
-          tabBarLabel: 'Profile',
-          tabBarIcon: ({ color, size }) => (
-            <TouchableOpacity activeOpacity={0.2}
-              
-            >
-              <Avatar.Image size={28} source={{ uri: "https://media.gettyimages.com/photos/hes-one-of-the-popular-guys-picture-id500721035?s=612x612" }}
-                color={color}
-                
-              />
-            </TouchableOpacity>
-
-          ),
-
-        }}
-      /> */}

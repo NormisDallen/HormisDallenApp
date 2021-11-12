@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { StyleSheet, Text, View, StatusBar, Dimensions, SafeAreaView, TextInput, Image, Pressable, TouchableOpacity, FlatList } from 'react-native'
+import { StyleSheet, Text, View,  Dimensions, SafeAreaView,  TouchableOpacity, FlatList } from 'react-native'
 import { theme } from "../theme";
-import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
+import { Avatar } from 'react-native-paper';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import HomeCard from '../components/Cards/HomeCard';
 import HomeSCrollView from '../components/ScrollView/HomeSCrollView';

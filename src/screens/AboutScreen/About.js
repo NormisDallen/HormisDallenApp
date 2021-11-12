@@ -1,9 +1,9 @@
 import React from 'react'
-import { View, Text, FlatList, SafeAreaView, ScrollView, StyleSheet, StatusBar } from 'react-native'
+import { View, Text, SafeAreaView, ScrollView, StyleSheet } from 'react-native'
 import { Card, FAB, Divider } from 'react-native-paper';
 import { theme } from '../../theme'
 import { Arrayimages } from '../../Constants/fakeimages';
-import { constantstyles } from '../../Constants/styles';
+import { constantstyles } from '../../Constants/constanstStyles';
 
 
 export default function About({ navigation }) {
@@ -25,7 +25,7 @@ export default function About({ navigation }) {
        
         `
         },
-      
+
         {
             id: '2',
             image: Arrayimages.image1,
@@ -92,95 +92,95 @@ export default function About({ navigation }) {
 
                     <View style={{ marginTop: 200, marginLeft: 8, alignContent: 'center' }}>
 
-                    {/* mission */}
+                        {/* mission */}
 
-                        <View style={{ padding: 5,display:'flex',flexDirection:'column' }}>
-                        <Text  style={styles.text3}>
-                        Mission
-                        </Text>
+                        <View style={{ padding: 5, display: 'flex', flexDirection: 'column' }}>
+                            <Text style={styles.text3}>
+                                Mission
+                            </Text>
 
-                    <View style={styles.inner2}>
-                    <Text style={styles.info2}>
-                    To Provide Education That Is Committed To Meeting The Evolutionary Challenges Of The Day
-                    </Text>
-                    </View>
+                            <View style={styles.inner2}>
+                                <Text style={styles.info2}>
+                                    To Provide Education That Is Committed To Meeting The Evolutionary Challenges Of The Day
+                                </Text>
+                            </View>
                         </View>
-                        
+
                         {/* vision */}
 
-                        <View style={{ padding: 5,display:'flex',flexDirection:'column' }}>
-                        <Text style={styles.text3}>
-                        Vision
-                        </Text>
-
-                    <View style={styles.info3}>
-                    <Text style={styles.info2}>
-                    Education Has No Money Value
-                    </Text>
-                    </View>
-                        </View>
-                        
-                    
-
-
-
-                      {/**mission statement */}
-                        <View style={{ padding: 5,display:'flex',flexDirection:'column' }}>
+                        <View style={{ padding: 5, display: 'flex', flexDirection: 'column' }}>
                             <Text style={styles.text3}>
-                            Mission Statement
+                                Vision
                             </Text>
-                               
-                                <View style={styles.inner2}>
-                                    <Text style={styles.info2}>
-                                        A Person Who Uses His/Her Full Potential To  {}
-                                        Effectively Fend For Self And Effectively Contribute To The Development Of The Nation
-                                    </Text>
-                                </View>
-                        
+
+                            <View style={styles.info3}>
+                                <Text style={styles.info2}>
+                                    Education Has No Money Value
+                                </Text>
+                            </View>
+                        </View>
+
+
+
+
+
+                        {/**mission statement */}
+                        <View style={{ padding: 5, display: 'flex', flexDirection: 'column' }}>
+                            <Text style={styles.text3}>
+                                Mission Statement
+                            </Text>
+
+                            <View style={styles.inner2}>
+                                <Text style={styles.info2}>
+                                    A Person Who Uses His/Her Full Potential To  { }
+                                    Effectively Fend For Self And Effectively Contribute To The Development Of The Nation
+                                </Text>
+                            </View>
+
                         </View>
                     </View>
 
                     {/* card info */}
                     {
-                        data.map((item, index)=>(<View key ={index}
-                         style={{  color: 'white', marginVertical: 10,  marginRight: 1 , marginLeft:1}}>
+                        data.map((item, index) => (<View key={index}
+                            style={{ color: 'white', marginVertical: 10, marginRight: 1, marginLeft: 1 }}>
 
-                        <Card
-                            style={{
-                                backgroundColor: `${theme.colors.accent}`,
-                                width: theme.dimensions.width-10,
-                                marginBottom: 10,
-                                justifyContent: 'space-around',
-                                marginTop: 6,
-                                shadowColor: `${theme.colors.primary}`,
-                                shadowOffset: { width: 0, height: 2 },
-                                shadowOpacity: .1,
-                                shadowRadius: 10,
-                                borderRadius: 10,
-                                
-                            }}>
-                            <Card.Actions style={[constantstyles.flexStyles]}>
-                                <View>
+                            <Card
+                                style={{
+                                    backgroundColor: `${theme.colors.accent}`,
+                                    width: theme.dimensions.width - 10,
+                                    marginBottom: 10,
+                                    justifyContent: 'space-around',
+                                    marginTop: 6,
+                                    shadowColor: `${theme.colors.primary}`,
+                                    shadowOffset: { width: 0, height: 2 },
+                                    shadowOpacity: .1,
+                                    shadowRadius: 10,
+                                    borderRadius: 10,
 
-                                    <Text style={styles.text2}>{item.title}</Text>
-                                    <Divider style={{ width: '100%' }} />
-                                    <View style={[constantstyles.resideViews]}>
-                                    <Text style={styles.info}>{item.info}</Text>
+                                }}>
+                                <Card.Actions style={[constantstyles.flexStyles]}>
+                                    <View>
+
+                                        <Text style={styles.text2}>{item.title}</Text>
+                                        <Divider style={{ width: '100%' }} />
+                                        <View style={[constantstyles.resideViews]}>
+                                            <Text style={styles.info}>{item.info}</Text>
+                                        </View>
+
+
                                     </View>
 
+                                </Card.Actions>
+                            </Card>
 
-                                </View>
-
-                            </Card.Actions>
-                        </Card>
-
-                    </View>
+                        </View>
 
 
                         ))
                     }
 
-                    
+
                 </ScrollView>
 
             </SafeAreaView>
@@ -205,18 +205,18 @@ const styles = StyleSheet.create({
     },
     info: {
         color: 'black',
-        textAlign:'center',
-        fontSize:15,
+        textAlign: 'center',
+        fontSize: 15,
         width: '100%'
-    
+
     },
     info2: {
         marginLeft: 5,
         color: `${theme.colors.primary}`,
         fontWeight: '600',
         marginTop: 4,
-        fontSize:15,
-        textAlign:'center'
+        fontSize: 15,
+        textAlign: 'center'
 
     },
     info3: {
@@ -228,8 +228,8 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         height: 50,
         elevation: 3,
-        alignContent:'center',
-        marginBottom:10
+        alignContent: 'center',
+        marginBottom: 10
 
     },
     inner2: {
@@ -241,15 +241,15 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         height: 70,
         elevation: 3,
-        alignContent:'center',
-        marginBottom:10
+        alignContent: 'center',
+        marginBottom: 10
     },
     text3: {
         marginLeft: 2,
         marginBottom: 15,
         color: 'black',
         fontWeight: 'bold',
-        
+
 
 
     },
@@ -290,7 +290,7 @@ const styles = StyleSheet.create({
         marginTop: 20,
         color: 'black',
         fontWeight: 'bold',
-        fontSize:18
+        fontSize: 18
 
     }
 })

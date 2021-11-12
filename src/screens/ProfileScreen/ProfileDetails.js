@@ -1,12 +1,12 @@
 
 
 import React from 'react'
-import { StyleSheet, Text, View, ScrollView, Pressable, Image, TouchableOpacity, StatusBar } from 'react-native'
-import { Avatar, Card, Divider } from 'react-native-paper'
+import { Text, View, ScrollView,  TouchableOpacity, StatusBar } from 'react-native'
+import { Avatar, Card } from 'react-native-paper'
 import ButtonComponent from '../../components/Button/Button'
-import { AntDesignIcon, EvilIcon, FontAwesomeIcon, MaterialIcon, Material, OctIcon } from '../../components/ResuableComponents/Icons'
+import {  MaterialIcon} from '../../components/ResuableComponents/Icons'
 import { theme } from '../../theme'
-//import profile from '../../../assets/images/profile.jpeg'
+
 import Circle from '../../components/circle'
 
 
@@ -136,9 +136,7 @@ export default function ProfileDetails({ navigation }) {
                 <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
 
                     <Circle />
-                    {/* <View style={{ marginRight: -0 }}>
-                        <Image source={{ uri: 'https://cdn3.vectorstock.com/i/thumb-large/21/07/young-smiling-female-character-is-holding-id-card-vector-38122107.jpg' }} style={{ width: 200, height: 250, }} />
-                    </View> */}
+
                 </View>
 
            

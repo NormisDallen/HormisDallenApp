@@ -1,4 +1,4 @@
-import images from "../exportedimages"
+
 export const Arrayimages = {
 
   image1: [
@@ -36,8 +36,3 @@ export const Arrayimages = {
   ],
 }
 
-// image:2[
-//   {
-//     imagepath:require('../../assets/images/img6.jpg')
-//   }
-// ],

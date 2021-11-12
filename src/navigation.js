@@ -1,14 +1,14 @@
 
 import React, { useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-//import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from './screens/HomeScreen/Home';
-//import AuthStack from './screens/AuthScreen/Auth';
+
 
 import { View, Text } from 'react-native'
 import MainStack from './screens/MainStack';
-import Auth from './screens/AuthScreen/Auth';
+
 const Stack = createNativeStackNavigator();
 
 export default function Navigation() {

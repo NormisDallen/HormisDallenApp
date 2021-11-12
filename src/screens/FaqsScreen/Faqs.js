@@ -1,7 +1,6 @@
 import React from 'react'
-import { View, Text,FlatList,SafeAreaView,ScrollView,Image,StyleSheet } from 'react-native'
+import { View, Text,FlatList,StyleSheet } from 'react-native'
 import { Card,FAB } from 'react-native-paper';
-import AppBar from '../../components/AppBar/AppBar'
 import { Arrayimages } from '../../Constants/fakeimages';
 import { theme } from '../../theme';
 
@@ -94,13 +93,6 @@ How do i apply?`,
                 }
                 /> 
        
-         {/* {'\n'}
-           <View style={styles.footer}>
-            <Text style={styles.text3}>
-                All inquires are related to the school{'\n'}
-            for more inquiries reach us on our contacts page
-            </Text>
-        </View> */}
         
         </View>
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { View, Text, ScrollView,Linking,StyleSheet } from 'react-native'
 import {  FAB, Card } from 'react-native-paper'
 import { theme } from '../../theme'
@@ -78,28 +78,6 @@ export default function ContactUs({navigation}) {
                     />
                     </View>
             
-                     {/* <View style={{marginTop:40,marginBottom:50}}>
-                    <FAB 
-                    
-                    label="Gmail Us Now"
-                    onPress={()=>{Linking.openURL(`mail:${ Gmail}}`)}}
-                    icon='email'
-                    color="white"
-                    uppercase='false'
-                    style={{position:'absolute',marginRight:10}}
-                    />
-                    </View>  */}
-                   
-                    {/* <View style={{marginTop:20}}>
-                    <FAB 
-                    uppercase='false'
-                    label="Gmail Us Now"
-                    onPress={()=>{Linking.openURL(`mail:${ Gmail}}`)}}
-                    icon='email'
-                    color="white"
-                    style={{position:'absolute',marginRight:10, width:150}}
-                    />
-                    </View> */}
                 </View>
               
                 <View>
