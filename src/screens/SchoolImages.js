@@ -10,47 +10,47 @@ export default function SchoolImages({ navigation }) {
     const Images = [
         {
             id: "1",
-            idn: require('../../assets/images/bus3.jpg'),
+            idn: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636776269_bus3.jpg",
         },
         {
             id: "2",
-            idn: require('../../assets/images/arial2.jpg'),
+            idn: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636775099_ariaview.jpg",
         },
         {
             id: "3",
-            idn: require('../../assets/images/img5.jpg'),
+            idn: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636775175_mainblock.jpg",
         },
         {
             id: "4",
-            idn: require('../../assets/images/guides.jpg'),
+            idn: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636775000_guides.jpg",
         },
         {
             id: "99",
-            idn: require('../../assets/images/img6.jpg'),
+            idn: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636778021_classes.jpg"
         },
         {
             id: "15",
-            idn: require('../../assets/images/dom.jpg'),
+            idn: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636775417_dom.jpg",
         },
         {
             id: "100",
-            idn: require('../../assets/images/girl.jpg'),
+            idn: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636772995_childrenplaying.jpg",
         },
         {
             id: "35",
-            idn: require('../../assets/images/img70.jpg'),
+            idn: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636777419_swimmingpool.jpg",
         },
         {
             id: "18",
-            idn: require('../../assets/images/img37.jpg'),
+            idn: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636777552_swimmingpool.jpg",
         },
         {
             id: "19",
-            idn: require('../../assets/images/img75.jpg'),
+            idn: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636778021_classes.jpg",
         },
         {
             id: "21",
-            idn: require('../../assets/images/dom.jpg'),
+            idn: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636775417_dom.jpg",
         },
         <View style={styles.wrapper}>
             <View style={styles.container}>
@@ -79,7 +79,7 @@ export default function SchoolImages({ navigation }) {
                         }}
                     >
                         <Image
-                            source={item.idn}
+                            source={{ uri: item.idn }}
                             resizeMode="cover"
                             style={{
                                 width: theme.dimensions.width / 3.5,

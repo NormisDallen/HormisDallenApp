@@ -30,19 +30,22 @@ const { height, width } = Dimensions.get("screen")
 
 const data = [
     {
-        image: require('../../assets/images/guides.jpg'),
+        image: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636775000_guides.jpg",
         words: "Scouts and guides "
     },
     {
-        image: require('../../assets/images/girl.jpg'),
+
+        image: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636772995_childrenplaying.jpg",
         words: "kids "
     },
     {
-        image: require('../../assets/images/img6.jpg'),
+
+        image: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636775099_ariaview.jpg",
         words: "Arial "
     },
     {
-        image: require('../../assets/images/img5.jpg'),
+
+        image: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636775175_mainblock.jpg",
         words: "Main block"
     },
 

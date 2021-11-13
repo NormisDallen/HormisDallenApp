@@ -15,11 +15,11 @@ export default function TransportScreen() {
                     <Card style={{ width: '100%', marginLeft: 0, display: 'flex', flexDirection: 'row', backgroundColor: `${theme.colors.primary}`, height: '70%', justifyContent: 'space-between', borderBottomLeftRadius: 10, borderBottomRightRadius: 10, borderTopLeftRadius: 0, borderTopRightRadius: 0 }}>
                         <Card.Actions >
                             <View style={styles.actions} >
-                                <Image source={require('../../../assets/images/bus5.jpeg')} style={{ width: 150, height: 100, borderRadius: 20, alignItems: 'flex-end', marginTop: 40 }} />
+                                <Image source={{ uri: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636776227_buss1.jpg" }} style={{ width: 150, height: 100, borderRadius: 20, alignItems: 'flex-end', marginTop: 40 }} />
                             </View>
 
                             <View style={styles.actions1}>
-                                <Image source={require('../../../assets/images/bus.jpg')} style={{ width: 150, height: 100, borderRadius: 20, alignItems: 'flex-end', marginTop: 40 }} />
+                                <Image source={{ uri: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636776247_bus2.jpg" }} style={{ width: 150, height: 100, borderRadius: 20, alignItems: 'flex-end', marginTop: 40 }} />
                             </View>
                         </Card.Actions>
 
@@ -33,10 +33,10 @@ export default function TransportScreen() {
             <ScrollView style={{ marginTop: -180 }}>
                 <View style={{ marginTop: -10, display: 'flex', backgroundColor: 'whitesmoke', flexDirection: 'row' }}>
                     <View style={{ marginLeft: 10 }}>
-                        <Image source={require('../../../assets/images/bus3.jpg')} style={{ width: 150, height: 120, borderRadius: 20, alignItems: 'flex-end', marginTop: 50 }} />
+                        <Image source={{ uri: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636776269_bus3.jpg" }} style={{ width: 150, height: 120, borderRadius: 20, alignItems: 'flex-end', marginTop: 50 }} />
                     </View>
                     <View style={{ marginLeft: 5 }} >
-                        <Image source={require('../../../assets/images/bus4.jpg')} style={{ width: 150, height: 120, borderRadius: 20, alignItems: 'flex-end', marginTop: 50, marginLeft: 40 }} />
+                        <Image source={{ uri: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636776295_bus4.jpg" }} style={{ width: 150, height: 120, borderRadius: 20, alignItems: 'flex-end', marginTop: 50, marginLeft: 40 }} />
                     </View>
                 </View>
 

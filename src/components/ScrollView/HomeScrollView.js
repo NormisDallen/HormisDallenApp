@@ -37,9 +37,7 @@ const HomeSCrollView = ({ images, showViews, menuStyle, imageStyles, noHeight, n
                                 theme.dimensions.width / 2 : theme.dimensions.width / 3,
                             backgroundColor: `${theme.colors.black}`
                         }}
-                        onPress={() => screenDetails && navigation?.navigate("MenuListItems", {
-                            screen: item?.screenDetails?.name
-                        })}
+
 
                     >
                         {/*dots */}
@@ -100,7 +98,10 @@ const HomeSCrollView = ({ images, showViews, menuStyle, imageStyles, noHeight, n
                                 backgroundColor: `${theme.colors.black}`
                             }, imageStyles]}
                             source={
-                                item.image
+                                {
+                                    uri: item.image
+                                }
+
                             }
                             resizeMode="cover"
                         />

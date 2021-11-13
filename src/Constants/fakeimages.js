@@ -3,32 +3,32 @@ export const Arrayimages = {
 
   image1: [
     {
-      imagepath: require('../../assets/images/sch.jpg'),
+      imagepath: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636775521_school.jpg",
     },
     
     {
-      imagepath: require('../../assets/images/img6.jpg'),
+      imagepath: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636775638_image6.jpg",
     },
   ],
   image2: [
     {
-      imagepath: require('../../assets/images/img70.jpg'),
+      imagepath: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636777419_swimmingpool.jpg",
     },
     {
-      imagepath: require('../../assets/images/img69.jpg'),
+      imagepath: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636777419_swimmingpool.jpg",
     },
    
   ],
   image3: [
     {
-      imagepath: require('../../assets/images/arial.jpg'),
-      imagepath: require('../../assets/images/arial2.jpg'),
+      imagepath: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636775334_anothorarailview.jpg",
+      imagepath: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636775099_ariaview.jpg",
     }
   ],
 
   image4: [
     {
-      imagepath: require('../../assets/images/dom.jpg'),
+      imagepath: "https://hormisdallenschoolsapp.com/hormisdallenwebapp/storage/app/public/images/events/1636775417_dom.jpg",
     }
   ],
 }
